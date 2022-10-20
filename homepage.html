@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+<link href="footer.css" rel="stylesheet">
+        <style>
+            
+.header{
+    background-color: url('http://www.autodatz.com/wp-content/uploads/2017/05/Old-Car-Wallpapers-Hd-36-with-Old-Car-Wallpapers-Hd.jpg');
+    background-image: linear-gradient( 135deg, #9f05ff69 10%, #fd5e086b 100%);
+}
+ 
+p{
+ font-family: Poppins;
+ text-align:justify; 
+ color:#000000;
+ }
+
+.content{
+ background: white;
+ width:70%;
+ padding:40px;
+ margin: 100px auto;
+ font-family: San-serif;
+
+}
+ 
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 65%;
+}
+.slider {
+        width: 500px;
+        height: 300px;
+        background-color: yellow;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0px;
+        text-align: center;
+        overflow: hidden;
+      }
+      .image-container {
+        width: 1500px;
+        background-color: pink;
+        height: 300px;
+        clear: both;
+        position: relative;
+        -webkit-transition: left 2s;
+        -moz-transition: left 2s;
+        -o-transition: left 2s;
+        transition: left 2s;
+      }
+      .slide {
+        float: left;
+        margin: 0px;
+        padding: 0px;
+        position: relative;
+      }
+      #slide-1:target ~ .image-container {
+        left: 0px;
+      }
+      #slide-2:target ~ .image-container {
+        left: -500px;
+      }
+      #slide-3:target ~ .image-container {
+        left: -1000px;
+      }
+      .buttons {
+        position: relative;
+        top: -20px;
+      }
+      .buttons a {
+        display: inline-block;
+        height: 15px;
+        width: 15px;
+        border-radius: 50px;
+        background-color:black;
+      }
+      * {
+        box-sizing: border-box;
+      }
+
+      .row {
+      display: flex;
+      }
+
+      .column {
+      flex: 33.33%;
+      padding: 4px;
+      }
+
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -250%);
+  color: rgb(33, 104, 12);
+  font-size: 30px;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.button {
+  padding: 10px 35px;
+  font-size: 17px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #191970;
+  border: none;
+  border-radius: 10px;
+ 
+}
+
+.button:hover {background-color: red;}
+
+.button:active {
+  background-color: #057be9;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+.checked {
+  color: orange;
+}
+
+
+        </style>
+        <title> Farming </title>
+        <meta charset="utf-8" />
+
+        <meta name="keywords" content="" />
+        <meta name="description" content="" />
+
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    </head>
+    
+    <body>
+     <!-- Responsive Navigation -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a href="#" class="navbar-brand">Agriculture</a>
+
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navBarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navBarCollapse">
+                    <div class="navbar-nav">
+                        <a href=" homepage.html" class="nav-item nav-link active">Home</a>
+                        <a href="About-us.html" class="nav-item nav-link active">About Us</a>
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown">Fields</a>
+                            <div class="dropdown-menu">
+                                <a href=" Pesticide.html" class="dropdown-item">Pestisides</a>
+                                <a href="  Fertilizers.html" class="dropdown-item">Fertilizers</a>
+                                <a href=" Crops.html" class="dropdown-item">Crops</a>
+ 
+                                <a href="Soil.html" class="dropdown-item">Soil</a>
+                            </div>
+                        </div>
+
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown">Major Crops</a>
+                            <div class="dropdown-menu">
+                                <a href="wheat.html" class="dropdown-item">Wheat</a>
+                                <a href="maize.html" class="dropdown-item">Maize</a>
+                                <a href="cotton.html" class="dropdown-item">Cotton</a>
+                                <a href="sugarcane.html" class="dropdown-item">Sugarcane</a>
+                                <a href="chilli.html" class="dropdown-item">Chilli</a>
+                            </div>
+                        </div>
+                           
+                    
+ 			<div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown">Cultivation</a>
+                            <div class="dropdown-menu">
+                                <a href=" Wheatcultivation.html" class="dropdown-item">Wheat</a>
+                                <a href="  maizecultivation.html" class="dropdown-item">Maize</a>
+                                <a href="  cottoncultivation.html" class="dropdown-item">Cotton</a>
+                                <a href="  sugarcanecultivation.html" class="dropdown-item">Sugarcane</a>
+                                <a href=" chillicultivation.html" class="dropdown-item">Chilli</a>
+                            </div>
+                        </div>
+                           
+                    </div>
+                    
+                    <div class="navbar-nav ms-auto">
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown">My Account</a>
+                            <div class="dropdown-menu">
+                                <a href="  register.html" class="dropdown-item">Register</a>
+                                <a href="  login.html" class="dropdown-item active">Login</a>
+                            </div>
+                        </div>
+                        <a href=" contactus.html" class="nav-item nav-link active">ContactUs</a>
+                    </div>
+
+                    <div class="d-flex">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="search.," />
+                            <button type="button" class="btn btn-secondary">
+                                <i class="bi-search"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+ 
+<div class="content">
+
+        <div class="container">
+            <img src="https://media.istockphoto.com/photos/tractor-spraying-pesticides-on-soy-field-with-sprayer-at-spring-picture-id1370265820?b=1&k=20&m=1370265820&s=170667a&w=0&h=kLekEGiNEgcfz6wi7JsZS6DfDkF_abMFM2siuEGRDsg=" alt="Farming" style="width:100%;" height="350px">
+            <div class="centered">Farming Is a Profession of Hope</div>
+          </div> <br/>
+
+        <center><h4 style="color:#00008B;">"If You Tickle The Earth With a Hoe She Laughs With a Harvest."</h4></center><br/>
+
+        <h4 style="color:#FF5733">What Is Farming?</h4>
+        <center><h6 style="color:#4B0082;">"Farming is the act or process of working the ground, planting seeds, and growing edible plants.
+             You can also describe raising animals for milk or meat as farming."</h6></center>
+        <p  >The activity or business of growing crops and raising livestock".Agriculture or farming is the practice of cultivating plants and livestock.Agriculture was the key development in the rise of 
+            sedentary human civilization, whereby farming of domesticated species created food surpluses that enabled people to live in cities. 
+            The history of agriculture began thousands of years ago. After gathering wild grains beginning at least 105,000 years ago,
+             nascent farmers began to plant them around 11,500 years ago. Pigs, sheep, and cattle were domesticated over 10,000 years ago. 
+             Plants were independently cultivated in at least 11 regions of the world. Industrial agriculture based on large-scale monoculture 
+             in the twentieth century came to dominate agricultural output, though about 2 billion people still depended on subsistence agriculture</p>
+
+        <p>Farming is a great way to describe the lifestyle and work of people whose jobs are in the agriculture industry. People often have 
+            a romantic idea of what farming is like-roosters crowing, farmers driving tractors and milking goats-although farming can be very
+             hard work, dependent on food prices and weather. The noun farm originally meant "a lease on farm land," and it comes from the Medieval 
+             Latin firma, "fixed payment."</p>
+
+ 
+
+            <div class="slider">
+                <span id="slide-1"></span>
+                <span id="slide-2"></span>
+                <span id="slide-3"></span>
+                <div class="image-container">
+                  <img src="https://media.istockphoto.com/photos/icon-concept-circulating-in-hands-for-environment-society-and-esg-in-picture-id1342186570?b=1&k=20&m=1342186570&s=170667a&w=0&h=TuYMop0fCug3aFBfduVrP6bgD2i6114KdugLqbQwTy4=" class="slide" width="500" height="300" />
+                  <img src="https://media.istockphoto.com/photos/tractor-spraying-pesticides-on-corn-field-with-sprayer-at-spring-picture-id1318850180?b=1&k=20&m=1318850180&s=170667a&w=0&h=gIOuW6ijiLpTyKuyS1ArFV5B3zqfCErWEnp7tlZHE5A=" class="slide" width="500" height="300" />
+                  <img src="https://media.istockphoto.com/photos/green-ripening-soybean-field-agricultural-landscape-picture-id1318149876?b=1&k=20&m=1318149876&s=170667a&w=0&h=7zPZi1Zz1Sz2ytW53qwu_wb0jvbIZvlBPMinzoy5lbk=" class="slide" width="500" height="300" />
+                  
+                </div>
+                <div class="buttons">
+                  <a href="#slide-1"></a>
+                  <a href="#slide-2"></a>
+                  <a href="#slide-3"></a>
+                </div>
+              </div><br/>
+
+           <center><h3 style="background-color: rgb(240, 143, 143);">Ratings</h3></center><br/>
+
+           <div class="row">
+            <div class="column">
+              <img src="https://media.istockphoto.com/photos/red-pepper-picture-id1085133064?b=1&k=20&m=1085133064&s=170667a&w=0&h=GnPno2IBS2M4xGi_-AqSjHn4HOrJBwo2KarN3huNEW4=" alt="Chilli" style="width:80%"><br>
+              <span class="fa fa-star checked"></span>
+           <span class="fa fa-star checked"></span>
+           <span class="fa fa-star checked"></span>
+           <span class="fa fa-star"></span>
+           <span class="fa fa-star"></span>
+            </div>
+            <div class="column">
+              <img src="https://media.istockphoto.com/photos/banana-picture-id174959827?b=1&k=20&m=174959827&s=170667a&w=0&h=gfKhy0WOa98Ms9DmtLGXROxoO2SoeDmJCyXuEXQuDEg=" alt="Banana" style="width:80%"><br>
+              <span class="fa fa-star checked"></span>
+           <span class="fa fa-star checked"></span>
+           <span class="fa fa-star checked"></span>
+           <span class="fa fa-star"></span>
+           <span class="fa fa-star"></span>
+            </div>
+            <div class="column">
+              <img src="https://media.istockphoto.com/photos/tomatos-background-picture-id519663318?b=1&k=20&m=519663318&s=170667a&w=0&h=JHp_75XSY9FZQsg7-576JeZWSNNcYewSoh7vgdWI244=" alt="Tomato" style="width:80%"><br>
+              <span class="fa fa-star checked"></span>
+           <span class="fa fa-star checked"></span>
+           <span class="fa fa-star checked"></span>
+           <span class="fa fa-star checked"></span>
+           <span class="fa fa-star checked"></span>
+            </div>
+            <div class="column">
+                <img src="https://media.istockphoto.com/photos/ginger-root-and-ginger-powder-in-the-bowl-picture-id647402644?b=1&k=20&m=647402644&s=170667a&w=0&h=5lyuLq8qT16BelSweo6vprZzM62uDGZXdpPXdEDzqBc=" alt="Ginger" style="width:80%"><br>
+                <span class="fa fa-star checked"></span>
+             <span class="fa fa-star checked"></span>
+             <span class="fa fa-star checked"></span>
+             <span class="fa fa-star "></span>
+             <span class="fa fa-star "></span>
+              </div>
+              <div class="column">
+                <img src="https://media.istockphoto.com/photos/tree-branch-with-cotton-flowers-on-white-background-picture-id1333742146?b=1&k=20&m=1333742146&s=170667a&w=0&h=qeRX__1KPfq8Qltaa2p8HMtdAN6v1igFkS9t9ALhgIs=" alt="Cotton" style="width:80%"><br>
+                <span class="fa fa-star checked"></span>
+             <span class="fa fa-star checked"></span>
+             <span class="fa fa-star checked"></span>
+             <span class="fa fa-star checked"></span>
+             <span class="fa fa-star checked"></span>
+              </div>
+              <div class="column">
+                <img src="https://media.istockphoto.com/photos/peanuts-on-a-light-background-closeup-picture-id1314840229?b=1&k=20&m=1314840229&s=170667a&w=0&h=MgVF5eE-qVnRVkcwlBHJo2ExpgAqTWoqGOqG1wZYVXE=" alt="Groundnut" style="width:80%"><br>
+                <span class="fa fa-star checked"></span>
+             <span class="fa fa-star checked"></span>
+             <span class="fa fa-star checked"></span>
+             <span class="fa fa-star checked"></span>
+             <span class="fa fa-star "></span>
+              </div>
+          </div> <br/>
+
+          <center><h3 style="background-color: slategray;">Farming Technologies</h3></center><br/>
+          <h3 style="color:#FF5733">What Is Hydroponic Framing?</h3>
+          <p>Hydroponics, also called aquaculture, nutriculture, soilless culture, or tank farming, the cultivation of plants
+             in nutrient-enriched water, with or without the mechanical support of an inert medium such as sand, gravel, or perlite.
+            
+             Hydroponics is a type of horticulture and a subset of hydroculture which involves growing plants, usually crops, 
+             without soil, by using water-based mineral nutrient solutions in aqueous solvents. Terrestrial or aquatic plants
+              may grow with their roots exposed to the nutritious liquid, or, in addition, the roots may be physically supported 
+              by an inert medium such as perlite, gravel, or other substrates. Despite inert media, roots can cause changes of 
+              the rhizosphere pH and root exudates can affect rhizosphere biology and physiological balance of the nutrient 
+              solution by secondary metabolites</p>
+
+           
+              <p>  Hydroponics is slowly gaining popularity in India and attracting more and more farmers. Basically, hydroponics is 
+                a type of horticulture and a subset of hydro culture, which is a method of growing plants, usually crops, without 
+                soil, by using mineral nutrient solutions in an aqueous solvent. 
+                Hydroponic farming, which is soil-less, water-based farming operations, may even be done in a tiny space such as a balcony.
+                 Instead of employing soil for plant nourishment, crops are supplied nutrient-rich water, which eliminates much of
+                  the baggage associated with soil-based approaches.
+                  Plants also grow through a process known as photosynthesis, in which plants use sunlight and a substance found inside
+                   their leaves known as chlorophyll to convert carbon dioxide and water into glucose and oxygen, as seen in reaction.
+                </p>
+                <p>When Compared To Traditional Soil-Grown Crop Production, Hydroponics Has the Following Advantages: Up to 90% more 
+                  efficient use of water. Production increases 3 to 10 times in the same amount of space. Many crops can be produced
+                   twice as fast in a well managed hydroponic system.</p>
+                <ul>
+                  <li><h5  style="color:#00008B;">Is Hydroponic farming profitable</h5></li>
+                  <p>Hydroponic farming is highly profitable. It is an example of high yield just in a small place in any season 
+                  or weather condition. The hydroponic vegetables are highly accurate and balanced in fibers, minerals, 
+                  and vitamins. It is the first method of doing soil-less farming/cultivation.</p> 
+                  <li><h5  style="color:#00008B;"> Advantages of Hydroponic farming</h5></li>
+                  <ol>
+                    <li style="color:#FF5733">Maximizes Space </li>
+                    Hydroponics requires far less space than plants grown in soil. Depending on the system, 
+                    when hydroponics are combined with vertical farming techniques, they can use up to 99 percent
+                     fewer lands than typical farming techniques.
+                    <li style="color:#FF5733">Conserves Water</li>
+                    It may seem counterintuitive, but growing plants in water actually use less water than growing
+                     the same plants in soil. In fact, hydroponic plants can grow with up to 98 percent less water 
+                     than traditional growing methods. 
+                     <li style="color:#FF5733">Produces Higher Yields</li>
+                     Creating ideal conditions ensures plants receive the perfect amount of nutrients, which come 
+                     in direct contact with roots. Additionally, microclimates allow for year-round growth and faster crop cycles.
+                     <li style="color:#FF5733">Require Less Labor</li>
+                     Without the need for tilling, weeding, herbicide and insecticide application, and other labor-intensive farm jobs,
+                      hydroponics offers a lighter load for laborers and can easily be managed with far fewer man-hours. 
+                      <li style="color:#FF5733"> Needs No Soil</li>
+                      The world is quickly losing workable soil. It's estimated that half of the world's topsoil has been lost in the 
+                      past 150 years. This is due to erosion, compaction, loss of soil structure, nutrient degradation, and salinity. 
+                      What does this mean for agriculture? We have a growing number of mouths to feed and a shrinking amount of soil to plant. 
+                  </ol>
+
+                </ul>
+
+                <center><img src="https://media.istockphoto.com/photos/hand-of-young-man-holding-a-white-hydroponic-pot-with-vegetable-on-picture-id1383427052?b=1&k=20&m=1383427052&s=170667a&w=0&h=CipGN9672YhDWSFSk6m37hJYW56ufI6k1pIzih6RhzQ=" width="300px"> 
+
+
+
+
+                <img src="https://media.istockphoto.com/photos/organic-hydroponic-flower-grow-with-led-light-indoor-farmagriculture-picture-id1310305087?b=1&k=20&m=1310305087&s=170667a&w=0&h=s5Hd0wEH3g_w99C9DW4qafV-aGgjCri5On3CTBaju-E=" width="300px"> <br/><br/>
+
+                <h4 style="color:#228B22">Agricultural Drone</h4><br/>
+               <p> An agricultural drone is an unmanned aerial vehicle used in agriculture operations mostly in yield optimization and 
+                  in monitoring crop growth and crop production. The aerial view provided by a drone can assists in the information of
+                   crop growth stages, crop health and soil variations in real time helping in any mitigation if required. 
+                   Multispectral sensors can collect image in near-infrared as well as in visible spectrum of the electromagnetic spectrum. </p>
+                   <p>As drones entered use in agriculture, the Federal Aviation Administration (FAA) encouraged farmers to use this new technology
+                      to monitor their fields. However, with the unexpected boom of agricultural drones, the FAA quickly retracted such 
+                      encouragement, pending new rules and regulations. With incidents such as drones crashing into crop dusters,
+                       the FAA and the AFBF (American Farm Bureau Federation) began discussions to agree on regulations that would allow 
+                       the beneficial use of such drones in a safe and efficient manner.</p>
+
+                    <p>In 2016, the FAA published rules for commercial drone operations. These rules require that commercial drone 
+                      operators pass a knowledge exam, register their aircraft, and fly in accordance with published restrictions.
+                       While satisfied overall with the rules, the American Farm Bureau Federation would like small adjustments to some of
+                        the restrictions that have been implemented
+                        Many countries, such as Malaysia, Singapore and Australia, have implemented laws regarding the use of
+                         drones. The EU plans a common set of drone regulations for all of its members. However, such laws are 
+                         still nonexistent in many countries around the world, and 15 countries have outlawed all drone operations.</p>
+
+                       <h5 style="color:#FF0000">Future Use</h5> 
+                        <p style="text-align:justify;">There is a large capacity for growth in the area of agricultural drones. With technology constantly improving,
+                           imaging of the crops will need to improve as well. With the data that drones record from the crops the farmers are
+                            able to analyze their crops and make educated decisions on how to proceed given the accurate crop information. 
+                            Software programs for analyzing and correcting crop production have the potential to grow in this market. 
+                            Farmers will fly a drone over their crops, accurately identify an issue in a specific area, and take the 
+                            necessary actions to correct the problem. This gives the farmer time to focus on the overall task of production 
+                            instead of spending time surveying their crops. Additional uses include keeping track of livestock,
+                             surveying fences, and monitoring for plant pathogens.</p>
+                       
+
+                      <center><img src="https://media.istockphoto.com/photos/drone-spraying-pesticide-on-wheat-field-picture-id1302200957?b=1&k=20&m=1302200957&s=170667a&w=0&h=lfiEfVXHn4pjqalr2K_9AAkozrt1n1kDqeBb-Xfn-hM=" width="300px" height="200px">
+                        <img src="https://media.istockphoto.com/photos/drone-for-agriculture-drone-use-for-various-fields-like-research-picture-id1022533074?b=1&k=20&m=1022533074&s=170667a&w=0&h=2GWUgm-6z5CTt6MTJASM1hocaJQzUeN8wDG-YO_JyqY=" width="300px" height="200px"><br/><br/>
+                       </div>
+
+  <footer class="footer-distributed">
+
+			<div class="footer-left">
+          <img src="farmer.webp">
+			
+
+				<p class="footer-links">
+					<a href="homepage.html">Home</a>
+					|
+					<a href=" About-us.html">About</a>
+					|
+					<a href="contactus.html">Contact</a>
+				</p>
+
+				<p class="footer-company-name">© 2020 Try shades Pvt Ltd.All Rights Reserved</p>
+			</div>
+
+			<div class="footer-center">
+				<div>
+					<i class="fa fa-map-marker"></i>
+					  <p><span>RGUKT IIIT IDUPULAPAYA</span>
+						Vempalli, Kadapa- 516330</p>
+				</div>
+
+				<div>
+					<i class="fa fa-phone"></i>
+					<p>+91 xxxxxxxxxx</p>
+				</div>
+				<div>
+					<i class="fa fa-envelope"></i>
+					<p><a href="Tryshades@gmail.com.com">tryshades@gmail.com</a></p>
+				</div>
+			</div>
+			<div class="footer-right">
+				<p class="footer-company-about">
+					<span>About the company</span>
+					The information and services may contain bugs, errors, problems or other limitations. We have no liability whatsoever for your use of any information or service. Use any service or information given here at your own risk. Read our full Terms of Service.</p>
+				<div class="footer-icons">
+					<a href="#"><i class="fa fa-facebook"></i></a>
+					<a href="#"><i class="fa fa-twitter"></i></a>
+					<a href="#"><i class="fa fa-instagram"></i></a>
+					<a href="#"><i class="fa fa-linkedin"></i></a>
+					<a href="#"><i class="fa fa-youtube"></i></a>
+				</div>
+			</div>
+		</footer>
+
+
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+       
+    </body>
+</html>
